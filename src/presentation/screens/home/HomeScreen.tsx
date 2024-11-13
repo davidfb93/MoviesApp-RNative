@@ -4,6 +4,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { PosterCarousel } from '../../components/movies/PosterCarousel';
 import { HorizontalCarousel } from '../../components/movies/HorizontalCarousel';
 import { FullScreenLoader } from '../../components/loaders/FullScreenLoader';
+import { SearchAnything } from '../../components/search/SearchAnything';
 
 export const HomeScreen = () => {
   const { top } = useSafeAreaInsets();
@@ -17,6 +18,8 @@ export const HomeScreen = () => {
   return (
     <ScrollView>
       <View style={{ marginTop: top + 20, paddingBottom: 30, backgroundColor: 'black' }}>
+        <SearchAnything />
+
         <Text style={styles.title}>En Cartelera</Text>
         {/* Principal */}
         <PosterCarousel movies={nowPlaying} />
