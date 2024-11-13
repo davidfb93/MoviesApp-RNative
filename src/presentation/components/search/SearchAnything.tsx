@@ -21,7 +21,7 @@ export const SearchAnything = () => {
       );
       const data = await response.json();
       setMovies(data.results);
-      console.log(data.results);
+      //console.log(data.results);
     } catch (error) {
       console.error('Error fetching data:', error);
     }
