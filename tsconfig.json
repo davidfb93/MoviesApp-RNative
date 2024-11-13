@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx", // o "react-jsx" dependiendo de la versión de React
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
